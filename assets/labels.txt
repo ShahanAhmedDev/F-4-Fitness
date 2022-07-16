@@ -1,0 +1,5 @@
+0 DogDown
+1 Goddess
+2 Plank
+3 Tree
+4 Warrior
