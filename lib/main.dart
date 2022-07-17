@@ -1,5 +1,7 @@
 import 'package:camera/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:pose_detection_teachable/login_screens/login_screen.dart';
 import 'package:pose_detection_teachable/model/remindTime.dart';
 import 'package:pose_detection_teachable/screens/custom-exercise/custom-exercise-action.dart';
 import 'package:pose_detection_teachable/screens/custom-exercise/custom-exercise.dart';
@@ -37,6 +39,7 @@ late List<CameraDescription> cameras;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   cameras = await availableCameras();
   await Hive.initFlutter();
   Hive.registerAdapter(SavedDataAdapter());
@@ -77,10 +80,10 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: WelcomePage(),
+        body: LoginScreen(),
       ),
       title: "F4Fitness",
-      initialRoute: WelcomePage.id,
+      // initialRoute: LoginScreen(),
       routes: <String, WidgetBuilder>{
         "/welcome": (BuildContext context) => new WelcomePage(),
         "/exercises": (BuildContext context) => new Exercises(),
@@ -96,6 +99,7 @@ class _MyAppState extends State<MyApp> {
             new CongratulationPage(),
         "/try-premium": (BuildContext context) => new TryPremium(),
         '/pose-detection': (BuildContext context) => new PoseDetection(cameras),
+        '/login':  (BuildContext context) => new LoginScreen(),
       },
     );
   }

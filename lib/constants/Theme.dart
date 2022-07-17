@@ -7,6 +7,10 @@ class Themes {
   static const Color appBarTheme = Colors.green;
   static const Color background = Colors.white;
 
+
+  static const kPrimaryColor = Color(0xfff1bb274);
+  static const kPrimaryLightColor = Color(0xfffeeeee4);
+
   //------ THEME FOR WELCOME PAGES -----//
 
   static const Color exerciseThemeMain = Color.fromRGBO(230, 250, 239, 1);

@@ -46,6 +46,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   tflite: ^1.1.1
   camera: 0.10.0
+  cloud_firestore: ^3.3.0
+  firebase_core: ^1.19.2
 
 
 dev_dependencies:
@@ -88,6 +90,14 @@ flutter:
     - assets/data/
     - assets/audio/
     - assets/gif/
+    - assets/images/
+
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans.ttf
+
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

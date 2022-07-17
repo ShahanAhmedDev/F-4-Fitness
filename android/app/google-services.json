@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "514053032807",
+    "project_id": "fyp-final-d2fb1",
+    "storage_bucket": "fyp-final-d2fb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514053032807:android:4616f2fed400c85c72fdc2",
+        "android_client_info": {
+          "package_name": "com.example.pose_detection_teachable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514053032807-ev80p4ac01q8d33pohrkom3rpc1ot1em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDagzPi6K8wkk4smvXfg8LerPU5qE6_V8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514053032807-ev80p4ac01q8d33pohrkom3rpc1ot1em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
